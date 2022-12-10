@@ -5,12 +5,12 @@ ppt shangmian
 
 (ee) C:\Users\adwhy>earthengine upload table -h
 
-UPLOAD SINGLE CSV AS SPATIAL: 
+## UPLOAD SINGLE CSV AS SPATIAL: 
 >earthengine upload table --asset_id users/hywong/occ_gcloud/CIIN --x_column decimalLongitude --y_column decimalLatitude --crs EPSG:4326 gs://nymphs_bucket_occ/CIIN_2000_2020_TheWorld.csv
 earthengine task list -l
 
-FOLDER UPLOAD: 
-GOOGLE SKD:
+## FOLDER UPLOAD: 
+## GOOGLE SKD:
 C:\Program Files (x86)\Google\Cloud SDK> gsutil config
 gcloud auth login
 gsutil ls gs://nymphs_bucket_occ
@@ -18,8 +18,10 @@ gcloud config set project PROJECT_ID
 
 (ee) C:\Users\adwhy> earthengine upload table --asset_id=projects/nymphs/assets/occ_gcloud --x_column=decimalLongitude --y_column=decimalLatitude --crs=EPSG:4326 gs://nymphs_bucket_occ
 
+## WHILE LOOP IN GIT BASH CONDA: 
+gsutil ls gs://nymphs_bucket_occ/*.csv | sed 's:.*/::' | sed 's/:.*//'
 gsutil ls gs://nymphs_bucket_occ/*.csv | for %a in do echo %a; done
 
-CONDA IN GIT BASH: 
+## CONDA IN GIT BASH: 
 C:\ProgramData\Anaconda3\etc\profile.d
 . /c/ProgramData/Anaconda3/etc/profile.d/conda.sh
