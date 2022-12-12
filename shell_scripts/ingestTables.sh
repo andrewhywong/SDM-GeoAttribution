@@ -4,8 +4,8 @@
 #   echo $line
 #done
 
-exec 3<occName_list
-exec 4<occ_list
+exec 3<occName_FirstL
+exec 4<occlist_FirstL
 asset="users/hywong/occ_gcloud/"
 #gcloud_pre="gs://nymphs_bucket_occ/"
 
