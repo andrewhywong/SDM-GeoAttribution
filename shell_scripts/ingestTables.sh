@@ -1,13 +1,17 @@
 #!/bin/sh
-#cat occ_list | while read line 
-#do
-#   echo $line
-#done
 
-exec 3<occName_FirstL
-exec 4<occlist_FirstL
-asset="users/hywong/occ_gcloud/"
-#gcloud_pre="gs://nymphs_bucket_occ/"
+target_files="gs://nymphs_bucket_occ/occdata_rmFull_Global_raw_reduced/*.csv"
+
+gsutil ls $target_files | sed 's:.*/::' | cut -d '.' -f 1 > ./occNamedelete
+gsutil ls $target_files > ./occdelete
+
+#echo ./occdelete
+
+exec 3<./occNamedelete
+exec 4<./occdelete
+
+# change target GEE asset folder to ingest:
+asset="users/hywong/occ_gcloud_global/"
 
 while read occName <&3 && read occData <&4
 do

@@ -1,1 +1,11 @@
-gs://nymphs_bucket_occ/occdata_rmFull/ACMI2.csv
+gs://nymphs_bucket_occ/occdata_rmFull_Global_raw/ACFI.csv
+gs://nymphs_bucket_occ/occdata_rmFull_Global_raw/ACMI2.csv
+gs://nymphs_bucket_occ/occdata_rmFull_Global_raw/ALCA.csv
+gs://nymphs_bucket_occ/occdata_rmFull_Global_raw/ALCE.csv
+gs://nymphs_bucket_occ/occdata_rmFull_Global_raw/ALRO3.csv
+gs://nymphs_bucket_occ/occdata_rmFull_Global_raw/ALSC.csv
+gs://nymphs_bucket_occ/occdata_rmFull_Global_raw/ALSTR.csv
+gs://nymphs_bucket_occ/occdata_rmFull_Global_raw/ANGR2.csv
+gs://nymphs_bucket_occ/occdata_rmFull_Global_raw/ANMA3.csv
+gs://nymphs_bucket_occ/occdata_rmFull_Global_raw/APGR2.csv
+gs://nymphs_bucket_occ/occdata_rmFull_Global_raw/ARPL.csv
