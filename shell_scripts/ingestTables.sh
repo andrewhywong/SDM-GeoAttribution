@@ -1,6 +1,6 @@
 #!/bin/sh
 
-target_files="gs://nymphs_bucket_occ/occdata_rmFull_Global_raw_reduced/*.csv"
+target_files="gs://nymphs_bucket_occ/doe_occ/*.csv"
 
 gsutil ls $target_files | sed 's:.*/::' | cut -d '.' -f 1 > ./occNamedelete
 gsutil ls $target_files > ./occdelete
@@ -11,7 +11,7 @@ exec 3<./occNamedelete
 exec 4<./occdelete
 
 # change target GEE asset folder to ingest:
-asset="users/hywong/occ_gcloud_global/"
+asset="users/hywong/occ_doe/"
 
 while read occName <&3 && read occData <&4
 do
