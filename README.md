@@ -22,7 +22,7 @@ Roozbeh Valavi, Gurutzeta Guillera-Arroita, Jose Lahoz-Monfort, and Jane Elith. 
 of presence-only species distribution models: a benchmark study with reproducible code</a>. Ecological
 Monographs, 92:e1486: 1–27, February 2022.
 
-Ramiro D. Crego, Jared A. Stabach, and Grant Connette. <a href=https://onlinelibrary.wiley.com/doi/pdf/10.1111/ddi.13491.>Implementation of species distribution models in Google Earth Engine</a>. Diversity and Distributions, 28(5):904–916, 2022. 
+Ramiro D. Crego, Jared A. Stabach, and Grant Connette. <a href=https://onlinelibrary.wiley.com/doi/pdf/10.1111/ddi.13491>Implementation of species distribution models in Google Earth Engine</a>. Diversity and Distributions, 28(5):904–916, 2022. 
 
 
 
