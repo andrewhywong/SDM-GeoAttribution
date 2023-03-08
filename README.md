@@ -1,6 +1,5 @@
 # Multi-Scale Forensic Geographic Attribution Workflow
-
-<img src='/images/flowdiagram.pdf' />
+[embed]/images/flowdiagram.pdf[/embed]
 
 Pollen is one of the most durable environmental materials that law enforcement agencies recover as trace
 evidence from people and objects. Although links between objects and geographic locations are essential
