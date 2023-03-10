@@ -13,7 +13,9 @@ location history of bees at both study extents. When coupling pollen with other 
 this geographic attribution framework can aid law enforcement personnel in refining investigation priorities
 and optimizing search strategies.
 
-## Sub-continental attribution in R
+Manuscript available: Using Habitat Suitability Models for Multi-Scale Forensic Geolocation Analysis
+
+## Subcontinental attribution in R
 
 ## Global attribution in Google Earth Engine Python API
 
