@@ -87,7 +87,7 @@ train_mod <- function(final_train,final_train_Xnorm,env_test,Xnorm_testdf,traind
     
   }
 
-  if (modelNow=='biomod2'){  # BIOMOD EXPORT MAPS ITSELF
+  if (modelNow=='biomod2'){  
     myseed <- sum(final_train$occ) + 300 + n
     set.seed(myseed)
     ptm <- proc.time()
@@ -112,9 +112,6 @@ train_mod <- function(final_train,final_train_Xnorm,env_test,Xnorm_testdf,traind
       
       
     }else if(absenseMode == 'pseudoAbsence'){
-      #### 12142022 UPDATE: CHANGE PA SELECTIONS ARGUMENTS: 
-      # if both presence and absence data are available, and there is enough absences : 
-      #   set PA.nb.rep = 0 and no pseudo-absence will be selected.
       myBiomodData <- BIOMOD_FormatingData(resp.var = myResp,
                                            expl.var = myExpl,
                                            resp.name = myRespName,
@@ -133,7 +130,7 @@ train_mod <- function(final_train,final_train_Xnorm,env_test,Xnorm_testdf,traind
                                         models = mymodels,
                                         models.options = myBiomodOption,
                                         NbRunEval = 1,
-                                        DataSplit = 100, # use all since splitted data 80/20
+                                        DataSplit = 100, 
                                         models.eval.meth = c("ROC"),
                                         SaveObj = TRUE,
                                         rescal.all.models = FALSE,
@@ -156,7 +153,7 @@ train_mod <- function(final_train,final_train_Xnorm,env_test,Xnorm_testdf,traind
     
   }
   
-  if (modelNow=='maxent'){ #NOTE NOT NORMALIZED!
+  if (modelNow=='maxent'){ # note: X normalized
     maxentPath <- paste0('./tunedMaxent')
     myseed <- sum(final_train_Xnorm$occ) + 300 + n
     set.seed(myseed)
@@ -170,9 +167,6 @@ train_mod <- function(final_train,final_train_Xnorm,env_test,Xnorm_testdf,traind
                                 k = nfolds,
                                 filepath = maxentPath)
     
-    # fit a maxent model with the tuned parameters
-    # library(rJava)
-    # .jinit()
     if(inherits(try(
       modeled <- dismo::maxent(x = final_train_Xnorm[, names(final_train_Xnorm)[which(names(final_train_Xnorm) != 'occ')]],
                               p = final_train_Xnorm$occ, 
@@ -184,12 +178,7 @@ train_mod <- function(final_train,final_train_Xnorm,env_test,Xnorm_testdf,traind
     t <- proc.time() - ptm
   }
   
-  # make prediction map
-  # the rasters should be normalized with the mean and sd of the training data
-  # predicting RF down-sampled on rasters with raster package
-  # use index = 2 for the likelihood of presence
-  
-  #### add condition for full prediction
+  #### make prediction map
   if (objective=='evaluate'){
     out_file <- cbind(env_test, trueLabel=paraList$trueLabel)
     
