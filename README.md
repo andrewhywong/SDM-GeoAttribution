@@ -13,11 +13,14 @@ location history of bees at both study extents. When coupling pollen with other 
 this geographic attribution framework can aid law enforcement personnel in refining investigation priorities
 and optimizing search strategies.
 
-Manuscript available: Using Habitat Suitability Models for Multi-Scale Forensic Geolocation Analysis
+Manuscript in revision: Using Habitat Suitability Models for Multi-Scale Forensic Geolocation Analysis
 
 ## Subcontinental attribution in R
 
 ## Global attribution in Google Earth Engine Python API
+
+### GEE CLT
+Command line tool configurations can be found in the <a href=https://developers.google.com/earth-engine/guides/command_line>GEE guide available here</a>. 
 
 ### References
 Roozbeh Valavi, Gurutzeta Guillera-Arroita, Jose Lahoz-Monfort, and Jane Elith. <a href=https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecm.1486>Predictive performance
