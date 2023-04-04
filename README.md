@@ -20,7 +20,7 @@ Manuscript in revision: Using Habitat Suitability Models for Multi-Scale Forensi
 ## Global attribution in Google Earth Engine Python API
 
 ### GEE CLT
-Command line tool configurations can be found in the <a href=https://developers.google.com/earth-engine/guides/command_line>GEE guide available here</a>. 
+Command line tool configurations can be found in the <a href=https://developers.google.com/earth-engine/guides/command_line>GEE guide available here</a>
 
 ### References
 Roozbeh Valavi, Gurutzeta Guillera-Arroita, Jose Lahoz-Monfort, and Jane Elith. <a href=https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecm.1486>Predictive performance
