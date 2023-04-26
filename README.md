@@ -13,7 +13,7 @@ location history of bees at both study extents. When coupling pollen with other 
 this geographic attribution framework can aid law enforcement personnel in refining investigation priorities
 and optimizing search strategies.
 
-Manuscript in revision: Using Habitat Suitability Models for Multi-Scale Forensic Geolocation Analysis
+Supported manuscript: Wang, H., Miller, J. A., Grubesic, T. H., & Jha, S. (2023). Using habitat suitability models for multiscale forensic geolocation analysis. *Transactions in GIS, 00*, 1–20. <a href=https://doi.org/10.1111/tgis.13052>https://doi.org/10.1111/tgis.13052</a>
 
 ## Subcontinental attribution in R
 
