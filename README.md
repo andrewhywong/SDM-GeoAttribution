@@ -1,7 +1,7 @@
 # Multi-Scale Forensic Geographic Attribution Workflow
 
 The repository provides code and datasets that support the findings of the article: 
-> Wang, H., Miller, J. A., Grubesic, T. H., & Jha, S. (2023). Using habitat suitability models for multiscale forensic geolocation analysis. *Transactions in GIS, 00*, 1–20. <a href=https://doi.org/10.1111/tgis.13052>https://doi.org/10.1111/tgis.13052</a>
+> Wang, H., Miller, J. A., Grubesic, T. H., & Jha, S. (2023). Using habitat suitability models for multiscale forensic geolocation analysis. *Transactions in GIS, 27*, 777–796. <a href=https://doi.org/10.1111/tgis.13052>https://doi.org/10.1111/tgis.13052</a>
 
 Pollen is one of the most durable environmental materials that law enforcement agencies recover as trace
 evidence from people and objects. Although links between objects and geographic locations are essential
